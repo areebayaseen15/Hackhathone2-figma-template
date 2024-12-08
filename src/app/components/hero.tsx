@@ -138,7 +138,7 @@ const Hero = () => {
   <div className="flex gap-10">
    
     <Image
-           src="/Assets/carFrame1.png"
+      src="/Assets/carFrame1.png"
       alt="Profile"
       width={640}
       height={360}
@@ -263,7 +263,7 @@ const Hero = () => {
 
                         {/* products  section */}
 
-                        <div className='mt-16 mx-w-[1312px] mx-h-[452px] text-[#90A3BF]'>
+                        <div className=' mt-16 mx-w-[1312px] mx-h-[452px] text-[#90A3BF]'>
                           <ul className='flex justify-between text-[#90A3BF]'>
                              <li>Popular Car</li>
                              <li className='text-end'>View All</li>
