@@ -4,7 +4,6 @@ import Image from "next/image"
 import { IoIosArrowDown, IoIosStarOutline } from 'react-icons/io'
 import { IoArrowDown, IoArrowUp, IoHeart, IoStarSharp } from 'react-icons/io5'
 import Cards from '../components/Cards'
-import Reviews from '../components/Reviews'
 import Link from 'next/link'
 
 
