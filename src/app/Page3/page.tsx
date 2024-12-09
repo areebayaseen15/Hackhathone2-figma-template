@@ -194,7 +194,7 @@ const Page3 = () => {
     <h3 className='line-through text-[14px]'>$100.00</h3>
     </div>
 
-              <Link href="/Payement" ><button className='bg-[#3563E9] hover:bg-[#213c8f] w-[140px] h-[56px] text-white  #3563E9  p-3  text-[16px] leading-[24px]'>
+              <Link href="/Payment" ><button className='bg-[#3563E9] hover:bg-[#213c8f] w-[140px] h-[56px] text-white  #3563E9  p-3  text-[16px] leading-[24px]'>
                     Rent Now 
                 </button>
                 </Link> 
