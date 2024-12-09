@@ -110,7 +110,7 @@ const data2=[
 
 const Page2 = () => {
   return (
-    <div className="mt-20 flex ">
+    <div className="lg:mt-40 mt-20 flex ">
         <div className='hidden lg:flex mx-w-[360px] mx-h-[1600px]  bg-white   shadow-lg'>
       <SideMenue/>
       </div>
@@ -279,4 +279,3 @@ const Page2 = () => {
 }
 
 export default Page2
-
