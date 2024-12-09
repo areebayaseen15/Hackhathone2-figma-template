@@ -135,8 +135,8 @@ const data2=[
 const Hero = () => {
   return (
 
-    <div className='w-[375px] h-auto xl:mt-[124px] bg-[#F6F7F9] xl:w-[1440px] xl:h-[2120px]'>
-  <div className="mt-[172px] md:mt-[120px] ml-[25px] rounded-[10px] w-[327px] h-[232px] md:flex gap-10 lg:w-[640px] lg:h-[360px]  lg:mt-[32px] lg:ml-[64px] lg:rounded-[10px]">
+    <div className='w-[375px] h-auto mt-[100px] xl:mt-[200px] bg-[#F6F7F9] xl:w-[1440px] xl:h-[2120px]'>
+  <div className="mt-[174px] md:mt-[120px] ml-[25px] rounded-[10px] w-[327px] h-[232px] md:flex gap-10 lg:w-[640px] lg:h-[360px]  lg:mt-[32px] lg:ml-[64px] lg:rounded-[10px]">
    
     <Image
       src="/Assets/carFrame1.png"
@@ -299,9 +299,20 @@ const Hero = () => {
   </div>
 </div>
 
+<div className='mx-auto text-center mt-20'>
+<Link href ="/Page2">  <button className='bg-[#3563E9] hover:bg-[#213c8f] rounded-[4px] text-white p-[20px] font-[600] text-[16px] mx-w-[156px] mx-h-[44px]'>
+    Show more Car
+  </button>
+  </Link>
+</div>
+
                         </div>
   )
 }
+
+
+
+
 
 export default Hero
 
