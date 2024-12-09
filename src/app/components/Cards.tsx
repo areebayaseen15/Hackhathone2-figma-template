@@ -3,6 +3,7 @@
 import React from 'react'
 import { RiPokerHeartsLine } from 'react-icons/ri'
 import Image from "next/image"
+import Link from "next/link"
 
 
 interface cardItems{
@@ -95,10 +96,14 @@ const Cards = ({tittle , Usertext , Number , image , newPrice ,oldPrice , model=
       <span className='text-[14px]'>day</span>
     <h3 className='line-throug text-[14px]'>{oldPrice}</h3>
     </div>
+               <Link href ="/Payment">
 
-                <button className='bg-[#3563E9] hover:bg-[#213c8f] w-[116px] text-white  #3563E9  p-3  text-[16px] leading-[24px]'>
+               <button className='bg-[#3563E9] hover:bg-[#213c8f] w-[140px] h-[56px] mt-5 text-white  #3563E9  p-3  text-[16px] leading-[24px]'>
                     Rent Now 
                 </button>
+               </Link>
+
+                
                 </div>
 
              </div>
