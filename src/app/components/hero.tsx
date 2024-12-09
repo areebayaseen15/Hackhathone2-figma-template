@@ -134,15 +134,15 @@ const data2=[
 ]
 const Hero = () => {
   return (
-    <div className='mt-40 lg:mt-10 bg-[#F6F7F9]'>
-  <div className="flex gap-10">
+
+    <div className='w-[375px] h-auto xl:mt-[124px] bg-[#F6F7F9] xl:w-[1440px] xl:h-[2120px]'>
+  <div className="mt-[172px] md:mt-[120px] ml-[25px] rounded-[10px] w-[327px] h-[232px] md:flex gap-10 lg:w-[640px] lg:h-[360px]  lg:mt-[32px] lg:ml-[64px] lg:rounded-[10px]">
    
     <Image
       src="/Assets/carFrame1.png"
       alt="Profile"
       width={640}
       height={360}
-      className=" lg:w-[640px] lg:h-[360px]" 
     />
 
     <Image
@@ -150,179 +150,160 @@ const Hero = () => {
       alt="Profile"
       width={640}
       height={360}
-      className="hidden lg:flex w-full lg:w-[640px] lg:h-[360px]" 
+      className="hidden md:flex" 
     />
   </div>
+  
+  <div className="flex flex-col md:mt-10  md:mx-40 lg:mx-40 xl:mx-auto xl:ml-16 lg:flex-row justify-center lg:justify-between items-center lg:items-start lg:gap-0 mt-0 mx-auto lg:mt-10">
+  {/* Pickup Card */}
+  <div className=" md:w-[500px] w-[327px]  lg:mx-w-[600px] xl:mx-w-[582px] mx-auto lg:mr-10 bg-white rounded-[10px] shadow-xl 
+  px-4 py-4">
+    <div className="flex gap-3">
+      <Image src="/Assets/mark.png" alt="mark" width={20} height={20} />
+      <h3 className=" text-16px] lg:text-xl font-semibold text-gray-800">Pick-Up</h3>
+    </div>
 
- 
-            {/* PickupCard */}
-      <div className='flex flex-col mt-10 lg:flex-row justify-between'>
-      
-
-        <div className=" w-[327px] sm:h-[120px] mx-auto h-auto lg:w-[582px] lg:h-[136px]  bg-white px-4 py-5 rounded-lg shadow-xl p-6">
-        <div className='flex gap-3'>
-        <Image
-          
-          src="/Assets/mark.png"
-          alt="mark"
-          width={20}
-          height={2}/>
-  <h3 className="text-xl font-semibold text-gray-800 text-center">Pick-Up</h3>
-            
+    <div className="mt-5 flex flex-row justify-between items-center">
+      {/* Location */}
+      <div className="flex-1">
+        <h1 className="text-[#1A202C] font-extrabold text-[16px] leading-[24px] tracking-[-2%]">Location</h1>
+        <div className="flex gap-2 items-center">
+          <p className="text-[14px] font-bold text-[#90A3BF]">Select your city</p>
+          <IoIosArrowDown />
         </div>
-        
-  <div className="mt-5 flex justify-between">
-    {/* <!-- Location --> */}
-    <div  >
-      <h1 className="  text-[#1A202C] mb-2 text-extrabold text-[16px] leading-[24px] tracking-[-2%]">Locations</h1>
-   
-    <div className="flex gap-5">
-    <p className=' text-[14px] font-bold tracking-[-2%] text-[#90A3BF] '>Select your city</p>
-    <IoIosArrowDown />
-    </div>
-    </div>
-     
-    <div className="h-[50vh] sm:h-[75vh] md:h-full w-px bg-gray-500 mx-auto"></div>
+      </div>
 
-    {/* <!-- Date --> */}
-     <div  >
-      <h1 className=" text-sm text-[#1A202C] mb-2 text-extrabold text-[16px] leading-[24px] tracking-[-2%]">Date</h1>
-   
-    <div className="flex gap-5">
-    <p className='text-[14px] font-normal tracking-[-2%] text-[#90A3BF] '>Select your Date</p>
-    <IoIosArrowDown />
-    </div>
-    </div  >
-     
-    {/* <!-- Time --> */}
-    <div  >
-      <h1 className=" text-sm text-[#1A202C] mb-2 text-extrabold text-[16px] leading-[24px] tracking-[-2%]">Time</h1>
-   
-    <div className="flex gap-5">
-    <p className='text-[14px] font-normal tracking-[-2%] text-[#90A3BF] '>Select your Time</p>
-    <IoIosArrowDown />
-    </div>
+      {/* Vertical Line */}
+      <div className="hidden lg:block h-[50px] w-px bg-gray-300 mx-6"></div>
+
+      {/* Date */}
+      <div className="flex-1">
+        <h1 className="text-[#1A202C] font-extrabold text-[16px] leading-[24px]">Date</h1>
+        <div className="flex gap-2 items-center">
+          <p className="text-[14px] font-normal text-[#90A3BF]">Select your Date</p>
+          <IoIosArrowDown />
+        </div>
+      </div>
+
+      {/* Vertical Line */}
+      <div className="hidden lg:block h-[50px] w-px bg-gray-300 mx-6"></div>
+
+      {/* Time */}
+      <div className="flex-1">
+        <h1 className="text-[#1A202C] font-extrabold text-[16px] leading-[24px]">Time</h1>
+        <div className="flex gap-2 items-center">
+          <p className="text-[14px] font-normal text-[#90A3BF]">Select your Time</p>
+          <IoIosArrowDown />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<div className="arrow my-10 mx-10">
-    <div className="flex bg-[#3563E9] w-[60px] h-[60px] hover:bg-[#2b4699] px-2 py-4 rounded-xl">
-    <IoArrowUp className="text-white text-3xl" />
-    <IoArrowDown className="text-white text-3xl" />
+
+  {/* Arrow Button */}
+  <div className="md:relative md:left-[200px]  lg:left-[150px] flex justify-center mt-0 lg:mt-10 ">
+    <div className="flex bg-[#3563E9] w-[64px] h-[64px] z-[1000] lg:mx-w-[60px] lg:mx-h-[60px] hover:bg-[#2b4699] justify-center items-center rounded-xl">
+      <IoArrowUp className="text-white text-3xl" />
+      <IoArrowDown className="text-white text-3xl" />
     </div>
-</div>
+  </div>
 
+  {/* Day-Off Card */}
+  <div className=" md:w-[500px] lg:ml-[300px]  w-[327px]  xl:mx-w-[582px]  mx-auto lg:mr-10 bg-white rounded-[10px] shadow-xl 
+  px-4 py-4">
+    <div className="flex gap-3">
+      <Image src="/Assets/mark.png" alt="mark" width={20} height={20} />
+      <h3 className="text-[16px] lg:text-xl font-semibold text-gray-800">Day-Off</h3>
+    </div>
 
-<div className="w-[582px] h-[136px]  bg-white px-4 py-5 rounded-lg shadow-lg p-6">
-        <div className='flex gap-3'>
-        <Image
-          
-          src="/Assets/mark.png"
-          alt="mark"
-          width={20}
-          height={2}/>
-  <h3 className="text-xl font-semibold text-gray-800 text-center">Day-Off</h3>
-            
+    <div className="mt-5 flex flex-row justify-between items-center">
+      {/* Location */}
+      <div className="flex-1">
+        <h1 className="text-[#1A202C] font-extrabold text-[16px] leading-[24px]">Location</h1>
+        <div className="flex gap-2 items-center">
+          <p className="text-[14px] font-bold text-[#90A3BF]">Select your city</p>
+          <IoIosArrowDown />
         </div>
-        
-  <div className="mt-5 flex justify-between">
-    {/* <!-- Location --> */}
-    <div  >
-      <h1 className=" text-sm text-[#1A202C] mb-2 text-extrabold text-[16px] leading-[24px] tracking-[-2%]">Locations</h1>
-   
-    <div className="flex gap-5">
-    <p className='text-[14px] font-bold tracking-[-2%] text-[#90A3BF] '>Select your city</p>
-    <IoIosArrowDown />
-    </div>
-    </div>
-     
+      </div>
 
-    {/* <!-- Date --> */}
-     <div  >
-      <h1 className=" text-sm text-[#1A202C] mb-2 text-extrabold text-[16px] leading-[24px] tracking-[-2%]">Date</h1>
-   
-    <div className="flex gap-5">
-    <p className='text-[14px] font-normal tracking-[-2%] text-[#90A3BF] '>Select your Date</p>
-    <IoIosArrowDown />
-    </div>
-    </div  >
-     
-    {/* <!-- Time --> */}
-    <div  >
-      <h1 className=" text-sm text-[#1A202C] mb-2 text-extrabold text-[16px] leading-[24px] tracking-[-2%]">Time</h1>
-   
-    <div className="flex gap-5">
-    <p className='text-[14px] font-normal tracking-[-2%] text-[#90A3BF] '>Select your Time</p>
-    <IoIosArrowDown />
-    </div>
+      {/* Vertical Line */}
+      <div className="hidden lg:block h-[50px] w-px bg-gray-300 mx-6"></div>
+
+      {/* Date */}
+      <div className="flex-1">
+        <h1 className="text-[#1A202C] font-extrabold text-[16px] leading-[24px]">Date</h1>
+        <div className="flex gap-2 items-center">
+          <p className="text-[14px] font-normal text-[#90A3BF]">Select your Date</p>
+          <IoIosArrowDown />
+        </div>
+      </div>
+
+      {/* Vertical Line */}
+      <div className="hidden lg:block h-[50px] w-px bg-gray-300 mx-6"></div>
+
+      {/* Time */}
+      <div className="flex-1">
+        <h1 className="text-[#1A202C] font-extrabold text-[16px] leading-[24px]">Time</h1>
+        <div className="flex gap-2 items-center">
+          <p className="text-[14px] font-normal text-[#90A3BF]">Select your Time</p>
+          <IoIosArrowDown />
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-</div>
 
-                        {/* products  section */}
-
-                        <div className=' mt-16 mx-w-[1312px] mx-h-[452px] text-[#90A3BF]'>
-                          <ul className='flex justify-between text-[#90A3BF]'>
+    {/* Popular Car Section */}
+<div className=' mt-16 mx-4 sm:mx-6 md:mx-8 lg:mx-16 xl:mx-24 mx-w-[1312px] mx-h-[452px] text-[#90A3BF]'>
+<ul className='flex justify-between text-[#90A3BF] lg:text-2xl'>
                              <li>Popular Car</li>
                              <li className='text-end'>View All</li>
                             
                           </ul>
-                          <div className='mt-8 md:mt-10 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-10'>
-                                 
+  <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-[320px] xl:gap-6 xl:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
     {data.map((elem) => (
       <Cards
         key={elem.id}
         image={elem.image}
         newPrice={elem.newPrice}
-         tittle={elem.tittle} 
-         Usertext={elem.Usertext}
-          Number={elem.Number}
-          redHeart={elem.redHeart}
-         model={elem.model}
-          oldPrice={elem.oldPrice}
-          
-  />
+        tittle={elem.tittle}
+        Usertext={elem.Usertext}
+        Number={elem.Number}
+        redHeart={elem.redHeart}
+        model={elem.model}
+        oldPrice={elem.oldPrice}
+      />
     ))}
-                          </div>
-                        </div>
+  </div>
+</div>
 
-                           {/* recommendation   section */}
-
-                           <div className=' mt-16 mx-w[1312px] mx-h-[452px] text-[#90A3BF]'>
-                          <ul className='flex justify-between text-[#90A3BF]'>
-                             <li>Recommendation Car</li>
-                            
-                          </ul>
-                          <div className='mt-8 md:mt-10 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-10'>
-                                 
+{/* Recommendation Section */}
+<div className="mt-16 mx-4 sm:mx-6 md:mx-8 lg:mx-16 xl:mx-24">
+  <ul className="flex justify-between text-[#90A3BF] text-sm sm:text-base md:text-lg lg:text-2xl">
+    <li>Recommendation Car</li>
+  </ul>
+  <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-[320px] xl:gap-6 xl:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
     {data2.map((elem) => (
       <Cards
         key={elem.id}
         image={elem.image}
         newPrice={elem.newPrice}
-         tittle={elem.tittle} 
-         Usertext={elem.Usertext}
-          Number={elem.Number}
-          redHeart={elem.redHeart}
-          oldPrice={elem.oldPrice}
-          model={elem.model}
-          
-  />
+        tittle={elem.tittle}
+        Usertext={elem.Usertext}
+        Number={elem.Number}
+        redHeart={elem.redHeart}
+        oldPrice={elem.oldPrice}
+        model={elem.model}
+      />
     ))}
-                          </div>
-                        </div>
+  </div>
+</div>
 
-                        <div className='  mx-auto text-center mt-20'>
-                         <Link href="/Page2"> <button className='bg-[#3563E9] rounded-[4px] text-white p-[20px] font-[600] text-[16px] mx-w-[156px] mx-h-[44px]'>
-                            Show more Car
-                          </button>
-                          </Link>
-                        </div>
                         </div>
   )
 }
 
 export default Hero
+
+
 
