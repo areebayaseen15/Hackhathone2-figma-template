@@ -3,21 +3,22 @@ import { FaHome, FaCar, FaChartBar, FaEnvelope, FaCalendarAlt, FaCog, FaQuestion
 import { BsMoonFill } from "react-icons/bs";
 import { CiLogout } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
+import Image from "next/image"
 
 
-const Rent = () => {
+const Dashboard = () => {
   return (
-    <div className='w-[1440px] h-[900px] gap-5 items-center justify-center bg-[#F6F7F9] flex'>
+    <div className='mt-20 w-full md:w-[1440px] h-auto md:h-[900px] md:flex md:gap-5 items-center justify-between  space-y-4 px-6 flex-wrap md:justify-center bg-[#F6F7F9] '>
         {/* side bar */}
 <div className='left-section'>
 
 
-    <div className="bg-[#FFFFFF] w-[286px] h-[900px] flex flex-col px-6 py-8">
+    <div className="bg-[#FFFFFF] w-full h-full md:w-[286px] md:h-[900px] flex flex-col px-6 py-8">
       {/* Main Menu Section */}
       <div>
         <h2 className="text-xs font-semibold text-[#94A7CB] opacity-40 mb-4">MAIN MENU</h2>
         <ul className="space-y-8 font-medium text-base text-[#94A7CB]">
-          <li className="flex items-center gap-4 bg-[#3563E9] px-4 py-2 rounded-md">
+          <li className=" flex items-center gap-4 bg-[#3563E9] px-4 py-2 rounded-md">
             <FaHome  className='text-white'/>
             <span className='text-white'>Dashboard</span>
           </li>
@@ -76,27 +77,29 @@ const Rent = () => {
 </div> 
 
 {/* mid section  */}
-
-    <div className="bg-white w-[534px] h-[836px] rounded-lg shadow-md p-3">
+<div className="bg-white w-full h-auto md:w-[534px] md:h-[836px] rounded-lg shadow-md p-3">
       {/* Header */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-gray-800">Details Rental</h2>
       </div>
 
       {/* Map Section */}
-      <div className="bg-gray-200 w-full h-[200px] rounded-lg mb-6 relative">
         {/* Simulated map and route */}
-        <div className="absolute inset-0 flex justify-center items-center">
-          <div className="h-1 w-[60%] bg-blue-500 rounded-full"></div>
-          <div className="w-6 h-6 bg-blue-500 rounded-full absolute top-[-4px] right-12"></div>
-        </div>
-      </div>
+        <Image
+          src="/Assets/Maps.png"
+          alt="Car"
+          width={0}
+          height={0}
+          className="w-full h-auto md:w-[446px] md:h-[272x] rounded-lg bg-blue-200"
+        />
 
       {/* Car Info Section */}
-      <div className="flex items-center gap-4 w-[132px] h-[72px] mb-6">
-        <img
-          src="/assests/image 8 - Copy.png"
+      <div className="flex items-center gap-4 w-full space-y-4 h-full md:w-[132px] md:h-[72px] mb-6">
+        <Image
+          src="/Assets/Look.png"
           alt="Car"
+          width={0}
+          height={0}
           className="w-[116px] h-[40px] rounded-lg bg-blue-200"
         />
         <div>
@@ -111,7 +114,7 @@ const Rent = () => {
       <div className='mt-10 flex flex-col gap-2 justify-between mr-3 mb-10'>
       
 
-      <div className="w-[510px] h-[136px] bg-white px-4 py-4 rounded-lg shadow-xl p-6">
+      <div className="w-full h-full md:w-[510px] md:h-[136px] bg-white px-4 py-4 rounded-lg shadow-xl p-6">
       <div className='flex gap-3'>
       <div className='rounded-full bg-blue-300 w-4 h-4 p-1 mt-[5px]'>
         <div className='rounded-full bg-blue-600 w-2 h-2'></div>
@@ -155,7 +158,7 @@ const Rent = () => {
 </div>
 {/* Drop-off secion */}
 
-<div className="w-[510px] h-[136px]  bg-white px-4 py-4 rounded-lg shadow-lg p-6">
+<div className="w-full h-full md:w-[510px] md:h-[136px]  bg-white px-4 py-4 rounded-lg shadow-lg p-6">
       <div className='flex gap-3'>
       <div className='rounded-full bg-sky-300 w-4 h-4 p-1 mt-[5px]'>
         <div className='rounded-full bg-sky-500 w-2 h-2'></div>
@@ -202,8 +205,8 @@ const Rent = () => {
 </div>
         
 {/* Total Rental Price */}
-      <div className="border-t pt-6">
-        <div className='flex relative flex-col'><h4 className="text-sm text-[#1A202C] mb-2">Total Rental Price</h4>
+      <div className="border-t ">
+        <div className='flex  relative flex-col'><h4 className="text-sm text-[#1A202C] mb-2">Total Rental Price</h4>
         
         <p className="text-sm text-gray-500">Overall price and includes rental discount</p>
         <p className="absolute bottom-0 right-4 flex text-2xl font-semibold text-[#1A202C]">$80.00</p></div>
@@ -218,11 +221,11 @@ const Rent = () => {
 
 
  <div className='right-section'>
- <div className=" bg-white w-[524px] h-[324px] rounded-lg shadow-md p-6">
+ <div className=" bg-white w-full h-auto md:w-[524px]  md:h-[324px] rounded-lg shadow-md p-6">
       {/* Header */}
-      <img src="/assests/RentalCar.png" alt="" />
+      <img src="/Assets/CarRental.png" alt="" />
 </div>
-<div><div className="w-[524px] h-[480px] bg-white rounded-xl shadow-md p-6">
+<div><div className="w-full h-auto md:w-[524px] md:h-[480px] bg-white rounded-xl shadow-md p-6">
   {/* Header */}
   <div className="flex justify-between items-center mb-4">
     <h2 className="text-lg font-semibold text-gray-800">Recent Transaction</h2>
@@ -234,11 +237,11 @@ const Rent = () => {
   <ul>
     {/* Transaction 1 */}
     <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
-      <div className="flex items-center">
+      <div className="md:md:flex items-center">
         <img
-          src="/assests/image 8 - Copy.png"
+          src="/Assets/Car.png"
           alt="Nissan GT – R"
-          className="w-[114px] h-[36px] rounded-md object-cover mr-4"
+          className= "w-full h-auto md:w-[114px] md:h-[36px] rounded-md object-cover mr-4"
         />
         <div>
           <p className="text-sm font-medium text-gray-800">Nissan GT – R</p>
@@ -252,11 +255,11 @@ const Rent = () => {
     </li>
     {/* Transaction 2 */}
     <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
-      <div className="flex items-center">
+      <div className="md:flex items-center">
         <img
-          src="/assests/image 8 - Copy.png"
+          src="/Assets/Car (1).png"
           alt="Koenigsegg"
-          className="w-[114px] h-[36px] rounded-md object-cover mr-4"
+          className="w-full h-auto md:w-[114px] md:h-[36px] rounded-md object-cover mr-4"
         />
         <div>
           <p className="text-sm font-medium text-gray-800">Koenigsegg</p>
@@ -270,11 +273,11 @@ const Rent = () => {
     </li>
     {/* Transaction 3 */}
     <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
-      <div className="flex items-center">
+      <div className="md:flex items-center">
         <img
-          src="/assests/Car.png"
+          src="/Assets/car (2).png"
           alt="Rolls – Royce"
-          className="w-[114px] h-[36px] rounded-md object-cover mr-4"
+          className="w-full h-auto md:w-[114px] md:h-[36px] rounded-md object-cover mr-4"
         />
         <div>
           <p className="text-sm font-medium text-gray-800">Rolls – Royce</p>
@@ -288,11 +291,11 @@ const Rent = () => {
     </li>
     {/* Transaction 4 */}
     <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
-      <div className="flex items-center">
+      <div className="md:flex items-center">
         <img
-          src="/assests/car-3.png"
+          src="/Assets/car (3).png"
           alt="CR – V"
-          className="w-[114px] h-[36px] rounded-md object-cover mr-4"
+          className="w-full h-auto md:w-[114px] md:h-[36px] rounded-md object-cover mr-4"
         />
         <div>
           <p className="text-sm font-medium text-gray-800">CR – V</p>
@@ -308,9 +311,10 @@ const Rent = () => {
 </div>
 </div>
  </div>
+  
 </div>
     
   )
 }
 
-export default Rent
+export default Dashboard
