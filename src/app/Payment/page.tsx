@@ -4,6 +4,7 @@ import { FaPaypal, FaBitcoin } from "react-icons/fa";
 import { BsShieldCheck } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 import Image from "next/image"
+import Link from "next/link"
 
 
 const Payment = () => {
@@ -396,9 +397,11 @@ const Payment = () => {
       placeholder="Apply promo code"
       className="flex-grow h-[40px] sm:h-[48px] bg-[#F6F7F9] rounded-lg px-4 text-[12px] sm:text-[14px] placeholder-[#90A3BF] focus:outline-none"
     />
+    <Link href="/Dashboard>
     <button className="w-full sm:w-[92px] h-[40px] sm:h-[48px] bg-[#3563E9] text-white text-[14px] sm:text-[16px] font-semibold rounded-lg">
       Apply now
     </button>
+    </Link>
   </div>
 
   {/* Total Price Section */}
