@@ -81,7 +81,7 @@ const data2=[
 const Page3 = () => {
   return (
     <div>
-    <div className="mt-32 lg:mt-10 flex ">
+    <div className="mt-32 lg:mt-28 flex ">
         <div className='hidden lg:flex mx-w-[360px] mx-h-[1600px]  bg-white   shadow-lg'>
       <SideMenue/>
       </div>
