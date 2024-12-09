@@ -59,7 +59,7 @@ const Navbar = () => {
   alt="Profile"
   width={44}
   height={44}
-  className="relative bottom-[120px] left-20 rounded-full md:hidden"
+  className="relative bottom-[120px] left-36 rounded-full md:hidden"
 />
 </Link>
 
