@@ -4,7 +4,7 @@ import Hero from "./components/hero";
 const Home = () => {
   return (
     <div>
-      <div className="bg-[#F6F7F9]  ">
+   <div className="mt-36 lg:mt-40 bg-[#F6F7F9]  ">
         <Hero />
       </div>
     </div>
