@@ -80,7 +80,7 @@ const data2=[
 
 const Page2 = () => {
   return (
-    <div className="flex flex-col lg:flex-row">
+   <div className="mt-32 flex flex-col lg:flex-row">
       {/* Sidebar */}
       <div className="hidden lg:flex w-[200px] xl:w-[300px] mx-h-[180px] bg-white shadow-lg">
         <SideMenue />
