@@ -73,7 +73,7 @@ const data2 = [
 const Page3 = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row">
+   <div className="mt-32 flex flex-col lg:flex-row">
         {/* Sidebar */}
         <div className="hidden lg:flex lg:w-[200px] xl:w-[300px] h-auto bg-white shadow-lg">
           <SideMenue />
