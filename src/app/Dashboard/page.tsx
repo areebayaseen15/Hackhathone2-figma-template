@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export default function Dashboard() {
   return (
-    <div className="max-w-[1440px] mx-auto p-4 flex flex-col lg:flex-row gap-6 bg-[#F6F7F9]">
+    <div className="mt-32 max-w-[1440px] mx-auto p-4 flex flex-col lg:flex-row gap-6 bg-[#F6F7F9]">
       {/* Sidebar/Main Menu */}
       <div className="lg:w-[286px] w-full bg-white p-4 rounded-lg flex flex-col justify-between shadow-md">
         <div> 
