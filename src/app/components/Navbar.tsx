@@ -1,31 +1,30 @@
 import React from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Image from "next/image";
-import { FaHeart } from "react-icons/fa";
+import {   FaHeart } from "react-icons/fa";
 import { AiFillBell } from "react-icons/ai";
 import { IoIosSettings } from "react-icons/io";
 import Link from "next/link";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const Navbar = () => {
   return (
-    <div className="  fixed top-0 left-0 right-0 bg-white shadow-md z-50  ">
-      <div className="  w-[375px] h-[150px] lg:mx-w-[1440px] lg:mx-h-[124px] px-5 lg:px-10 md:px-6 md:py-10 lg:py-10 ">
-        <div className="flex flex-col gap-0 md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          {/* Logo */}
-          <div className="flex justify-between items-center w-full md:w-auto">
+    <div className=" bg-white">
+    <div className=" xl:mx-10 max-w-[1440px] h-[124px] flex flex-col gap-2 sm:flex-row items-center sm:justify-between px-4 py-4  mx-auto">
+          <div className="flex justify-between items-center w-full md:w-auto ">
             <h1
-              className={`lg:ml-[50px] text-[24px] md:text-[32px] leading-[48px] tracking-[-3%] font-extrabold text-blue-500`}
+              className={`${plusJakartaSans.className}lg:ml-[50px] text-[24px] md:text-[32px] leading-[48px] tracking-[-3%] font-bold text-blue-500`}
             >
               MORENT
             </h1>
           </div>
 
           {/* Search Bar */}
-          <div className="relative ml-40 flex items-center gap-4  md:mr-10 mr-40    md:w-[492px] h-[48px] bg-gray-100 px-3 py-2 rounded-md">
+          <div className="relative ml-40 md:ml-0 flex items-center gap-4  md:mr-10 mr-40    md:w-[492px] h-[48px] border-[1px] border-[#C3D4E9]-white px-3 py-2 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 text-gray-400"
@@ -59,35 +58,48 @@ const Navbar = () => {
   alt="Profile"
   width={44}
   height={44}
-  className="relative bottom-[120px] left-36 rounded-full md:hidden"
+  className="relative bottom-[100px] left-36 rounded-full md:hidden"
 />
 </Link>
 
-          {/* Profile & Notification */}
-          <div className="hidden md:flex items-center lg:justify-center ml-[280px] space-x-3  ">
-            <Link href="#">
-              <FaHeart className="text-gray-500 w-[24px] h-[24px] mr-5" />
-            </Link>
-            <Link href="#">
-              <AiFillBell className="text-gray-500 w-[24px] h-[24px]" />
-            </Link>
-            <IoIosSettings className="text-gray-500 w-[100px] h-[24px]" />
 
+        {/* profile and notification */}
+        <div className="hidden sm:flex items-center space-x-4">
+          <div className="w-11 h-11 rounded-full border-[1px] border-[#C3D4E9] border-opacity-[80%] px-[10px] py-[10px]">
+            <FaHeart className="text-gray-600 w-6 h-6 hover:text-red-500 cursor-pointer" />
+          </div>
+          <div className="w-11 h-11 rounded-full border-[1px] border-[#C3D4E9] border-opacity-[80%] px-[10px] py-[10px] relative">
+            < AiFillBell className="text-gray-600 w-6 h-6 hover:text-blue-500 cursor-pointer" />
+
+            <span className="absolute top-2 right-2 bg-red-500 w-2 h-2 rounded-full"></span>
+          </div>
+          <div className="w-11 h-11 rounded-full border-[1px] border-[#C3D4E9] border-opacity-[80%] px-[10px] py-[10px]">
+            < IoIosSettings className="text-gray-600 w-6 h-6 hover:text-blue-500 cursor-pointer" />
+          </div>
+
+
+          <div className="w-11 h-11 rounded-full ">
+          
             <Link href="/Dashboard">
             <Image
               src="/Assets/img1.png"
               alt="Profile"
               width={60}
               height={60}
-              className="rounded-full"
+              className=" rounded-full "
             />
               </Link>
-          </div>
+              </div>
+              </div>
+        
+        </div>
+           
+  
+      
 
          
         </div>
-      </div>
-    </div>
+ 
   );
 };
 
