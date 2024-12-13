@@ -9,7 +9,7 @@ import Link from "next/link";
 const Payment = () => {
   return (
     <div
-      className="mt-5 lg:mt-10 w-full h-auto  mx-w-[1440px] mx-h-[2240px] flex flex-col-reverse
+      className="mt-32  w-full h-auto  mx-w-[1440px] mx-h-[2240px] flex flex-col-reverse
      xl:flex-row gap-16 space-y-8 "
     >
       <div className=" w-[295px] lg:w-[852px] xl:mx-w-[700px] mx-h-[2176px] lg:h-auto  rounded-lg space-y-8 p-7">
