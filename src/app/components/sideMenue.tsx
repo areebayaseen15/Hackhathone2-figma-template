@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const SideMenu = () => {
   return (
-    <div className="w-full max-w-[360px] lg:w-[360px] h-auto lg:h-[1600px] p-5 lg:p-10 bg-white">
+    <div className="w-full max-w-[360px] lg:w-[300px] h-auto lg:h-[1600px] p-5 lg:p-10 bg-white">
       <div className="w-full lg:w-[176px] h-auto">
         {/* Type Section */}
-        <div className="mt-20 h-auto flex flex-col gap-5">
+        <div className="mt-0 h-auto flex flex-col gap-5">
           <h1 className="text-[#90A3BF] text-lg md:text-xl font-semibold">
             Type
           </h1>
