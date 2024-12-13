@@ -183,7 +183,7 @@ const Page3 = () => {
 
           {/* reviews section */}
           <div
-            className="flex flex-col justify-center mx-0 lg:mx-0  w-[327px]  h-[484px] lg:w-[960px] lg:h-[452px] mt-10 bg-white lg:pt-5 
+            className="overflow-hidden flex flex-col justify-center mx-0 lg:mx-0  w-[327px]  h-[484px] lg:w-[960px] lg:h-[452px] mt-10 bg-white lg:pt-5 
             shadow-lg p-3 lg:p-2"
           >
             <div className="header ">
@@ -291,7 +291,7 @@ const Page3 = () => {
                 </div>
               </div>
               <p
-                className=" w-[243px] text-[10px] lg:racking-[-2%] leading-[21px] lg:w-[896px] h-[56px] 
+                className="overflow-hidden w-[243px] text-[10px] lg:racking-[-2%] leading-[21px] lg:w-[894px] h-[56px] 
                     lg:text-[14px] lg:leading-[28px] tracking-[-2%] ml-5 lg:ml-20"
               >
                 We are greatly helped by the services of the MORENT Application.
